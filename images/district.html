@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+  <ul>
+    <li><a href="assignment2.html"><b>Home</b>  &ensp;</a></li>
+    <li><a href="district.html"><b>District</b></a></li>
+    <li><a href="sign.html"><b>Sign Up</b></a></li>
+    <li><a href="contact.html"><b>Contact Us</b></a></li>
+  </ul>
+      <br>
+    <div class="container text-center">
+        <div class="row">
+            <!--column-->
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">THIRUVANANTHAPURAM</h5>
+                  <p class="card-text">Thiruvananthapuram also known by its former name Trivandrum is the capital of the Indian state of Kerala..</p>
+                  <a href="trivandrum.html" class="btn btn-primary">For More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://image3.mouthshut.com/images/imagesp/925590579s.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> KOLLAM</h5>
+                  <p class="card-text">Kollam is a city in the state of Kerala, on India's Malabar Coast. It’s known as a trade hub and for its beaches, like lively Kollam and secluded Thirumullavaram.</p>
+                  <a href="kollam.html" class="btn btn-primary">For more</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Pathanamthitta_Town.jpg/1024px-Pathanamthitta_Town.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PATHANAMTHITTA</h5>
+                  <p class="card-text">Pathanamthitta is a municipality situated in the Central Travancore region in the state of Kerala, India, spread over an area of 23.50 km2. </p>
+                  <a href="pathanamthitta.html" class="btn btn-primary">For more</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/id/1266651692/photo/houseboat-in-alappuzha-backwaters-kerala.jpg?b=1&s=170667a&w=0&k=20&c=BVVxjzeqLdreKBP1dM6iE-6Q7P1nHd2EQx_EbmD9Cac=" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ALAPPUZHA</h5>
+                  <p class="card-text">Alappuzha (or Alleppey) is a city on the Laccadive Sea in the southern Indian state of Kerala.</p>
+                  <a href="alappuzha.html" class="btn btn-primary">For more</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.shutterstock.com/image-photo/morning-landscape-illikkalkallukottayamsouth-india-upcoming-260nw-1633736497.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KOTTAYAM</h5>
+                  <p class="card-text">Kottayam is a municipal town in the Indian state of Kerala. Flanked by the Western Ghats on the east and the Vembanad Lake and paddy fields of Kuttanad on the west.<br>
+                <br>
+            </p>
+                  <a href="kottayam.html" class="btn btn-primary">For more</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://thumbs.dreamstime.com/b/idukki-dam-kerala-asias-largest-arch-dam-28841498.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">IDUKKI</h5>
+                  <p class="card-text">Idukki district is a densely forested, mountainous region in the south Indian state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the rare, blue Neelakurinji flower blooms every 12 years. </p>
+                  <a href="idukki.html" class="btn btn-primary">For more</a>
+                </div>
+              </div>
+          </div>
+         
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://t4.ftcdn.net/jpg/01/05/87/07/360_F_105870752_JFf90D8d02Er0DoYyC0lIjlsZwULH5HR.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">ERNAKULAM</h5>
+                      <p class="card-text">Sprawling, residential Ernakulam is known for Marine Drive, a busy waterfront promenade where boats offer backwater cruises. The Kerala Folklore and Hill Palace museums explore local heritage through art and antiquities.</p>
+                      <a href="ernakulam.html" class="btn btn-primary">For more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.shutterstock.com/image-photo/vadakkumnathan-lord-shiva-ancient-old-260nw-2229838779.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">THRISSUR</h5>
+                      <p class="card-text">Thrissur is a city in the south Indian state of Kerala. It's known for sacred sites and colorful festivals. In the center is Vadakkumnathan Temple, dedicated to Lord Shiva and adorned with murals.</p>
+                      <a href="THRISSUR.html" class="btn btn-primary">For more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.shutterstock.com/image-photo/paddy-field-rice-kollangode-palakkad-260nw-2147990793.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">PALAKKAD</h5>
+                      <p class="card-text">Palakkad, or Palghat, is a city in Kerala, a state in southwestern India. The 18th-century Palakkad Fort has sturdy battlements, a moat and a Hanuman temple on its grounds.<br><br></p>
+                      <a href="PALAKKAD.html" class="btn btn-primary">For more</a>
+                    </div>
+                  </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://t4.ftcdn.net/jpg/04/23/13/03/360_F_423130336_DVxRVoingwRztxfCTvaFapyxoD4Ijtpm.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">MALAPPURAM</h5>
+                      <p class="card-text">Malappuram is a city in the Indian state of Kerala, spread over an area of 58.20 km² including the surrounding suburban areas. The first municipality in the district formed in 1970, Malappuram serves as the administrative headquarters of Malappuram district</p>
+                      <a href="MALAPPURAM.html" class="btn btn-primary">For more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://thumbs.dreamstime.com/b/beautyful-beach-calicut-kerala-india-kozhikode-beach-calicut-beach-beach-western-side-kozhikode-situated-207317139.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">KOZHIKODE</h5>
+                      <p class="card-text">Kozhikode is a coastal city in the south Indian state of Kerala. It was a significant spice trade center and is close to Kappad Beach, where Portuguese explorer Vasco da Gama landed in 1498. The central Kozhikode Beach, overlooked by an old lighthouse, is a popular spot for watching the sunset</p>
+                      <a href="KOZHIKODE.html" class="btn btn-primary">For more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.shutterstock.com/image-photo/outstanding-landscape-view-wayanad-tea-260nw-2042867465.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">WAYANAD</h5>
+                      <p class="card-text">Wayanad is a rural district in Kerala state, southwest India. In the east, the Wayanad Wildlife Sanctuary is a lush, forested region with areas of high altitude, home to animals including Asiatic elephants, tigers, leopards and egrets. In the Ambukuthi Hills to the south, Edakkal Caves contain ancient petroglyphs, some dating back to the Neolithic age.</p>
+                      <a href="WAYANAD.html" class="btn btn-primary">For more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media.istockphoto.com/id/1297406847/photo/palm-trees-sandy-bay-flanked-by-rocky-cliffs-overlooking-arabian-sea-at-sunset-kannur-india.jpg?b=1&s=170667a&w=0&k=20&c=5_BobEUAA4jFgJT9YKnzpfH-5W_IE8J5NvlGac8VuQk=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">KANNUR</h5>
+                          <p class="card-text">Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice trade..</p>
+                          <a href="KANNUR.html" class="btn btn-primary">For more</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Bekal_Fort_Kasargod.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">KASARAGOD</h5>
+                          <p class="card-text">Kasaragod is a municipal town and administrative headquarters of Kasaragod district in the state of Kerala, India. Established in 1966, Kasaragod was the first municipal town in the district. It is the northernmost district of Kerala and is also known as Saptha Bhasha Sangama Bhoomi..</p>
+                          <a href="KASARGOD.html" class="btn btn-primary">For more</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+          </div>
+      </div>
+    
+</body>
+</html>
